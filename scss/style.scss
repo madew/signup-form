@@ -1,3 +1,41 @@
+@import 'variables';
+@import 'mixins';
+@import 'signup';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: magenta;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  padding: 0 10px;
+
+  background-image: url('../images/bg-intro-desktop.png');
+  background-color: $color-primary;
+  background-repeat: repeat;
+
+  @include atSmall {
+    height: 100vh;
+  }
+
+  @include atMedium {
+    align-items: center;
+  }
 }

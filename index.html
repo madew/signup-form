@@ -16,13 +16,96 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./dist/css/style.min.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    Learn to code by watching others See how experienced developers solve
-    problems in real-time. Watching scripted tutorials is great, but
-    understanding how developers think is invaluable. Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password Claim your
-    free trial By clicking the button, you are agreeing to our Terms and
-    Services
+    <div class="container">
+      <section class="signup">
+        <div class="signup__text-wrap">
+          <h1 class="signup__heading">Learn to code by watching others</h1>
+          <p class="signup__text">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="signup__form-wrap">
+          <div class="signup__form-header">
+            <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+          </div>
+          <form type="text" class="signup__form">
+            <div class="form-group">
+              <input
+                class="signup__input"
+                type="text"
+                name="first-name"
+                id="firstName"
+                aria-label="First Name"
+                placeholder="First Name"
+                aria-describedby="firstNameDesc"
+              />
+              <span class="input-error-info" id="firstNameDesc"
+                >First name cannot be empty and must be min. 2 character
+                long.</span
+              >
+            </div>
+            <div class="form-group">
+              <input
+                class="signup__input"
+                type="text"
+                name="last-name"
+                id="lastName"
+                aria-label="Last Name"
+                placeholder="Last Name"
+                aria-describedby="lastNameDesc"
+              />
+              <span class="input-error-info" id="lastNameDesc">
+                Last name cannot be empty and must be min. 2 character long.
+              </span>
+            </div>
+            <div class="form-group">
+              <input
+                class="signup__input"
+                type="text"
+                name="email"
+                id="email"
+                aria-label="Email"
+                placeholder="Email"
+                aria-describedby="emailDesc"
+              />
+              <span class="input-error-info" id="emailDesc">
+                Email address is invalid.
+              </span>
+            </div>
+            <div class="form-group">
+              <input
+                class="signup__input"
+                type="password"
+                name="password"
+                id="password"
+                aria-label="Password"
+                placeholder="Password"
+                aria-describedby="passwordDesc"
+              />
+              <span class="input-error-info" id="passwordDesc">
+                Password must contain at least one lowercase, uppercase, number
+                and 8 characters long.
+              </span>
+            </div>
+            <button id="submit" type="submit">Claim Your Free Trial</button>
+            <p class="signup__form-terms">
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="./dist/js/app.js"></script>
   </body>
 </html>
